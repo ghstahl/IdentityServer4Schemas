@@ -3,5 +3,6 @@
     "id": "http://jsonschema.net",
     "type": "integer",
     "title": "Flow schema.",
-    "enum": [0, 1, 2, 3, 4, 5]
+    "minimum": 0,
+    "maximum": 5
 }
