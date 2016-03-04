@@ -9,11 +9,7 @@
             "type": "string",
             "title": "ClientId schema.",
             "description": "An explanation about the puropose of this instance described by this schema.",
-            "name": "ClientId",
-            "enum": [
-        null,
-        "client"
-      ]
+            "name": "ClientId"
         },
         "ClientSecrets": {
             "type": "array",
@@ -23,27 +19,22 @@
                 "description": "ClientSecret ",
                 "$ref": "https://raw.githubusercontent.com/ghstahl/IdentityServer4Schemas/master/ClientSecret.json"
             }
+        },
+        "Flow": {
+            "$ref": "https://raw.githubusercontent.com/ghstahl/IdentityServer4Schemas/master/Flow.json"
+        },
+        "AllowedScopes": {
+            "type": "array",
+            "title": "AllowedScopes schema.",
+            "items": {
+                "type": "string"
+            }
         }
-    }
-},
-"Flow": {
-    "$ref": "https://raw.githubusercontent.com/ghstahl/IdentityServer4Schemas/master/Flow.json"
-},
-"AllowedScopes": {
-    "type": "array",
-    "title": "AllowedScopes schema.",
-    "name": "AllowedScopes",
-    "items": [
-        {
-            "type": "string",
-        }
-      ]
-}
-},
-"required": [
-    "ClientId",
-    "ClientSecrets",
-    "Flow",
-    "AllowedScopes"
-  ]
+    },
+    "required": [
+		"ClientId",
+		"ClientSecrets",
+		"Flow",
+		"AllowedScopes"
+	]
 }
