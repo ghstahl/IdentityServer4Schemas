@@ -1,0 +1,18 @@
+ {
+     "$schema": "http://json-schema.org/draft-04/schema#",
+     "id": "http://jsonschema.net",
+     "type": "object",
+     "title": "Clients schema.",
+     "description": "An explanation about the puropose of this instance described by this schema.",
+     "name": "/",
+     "properties": {
+         "Clients": {
+             "id": "http://jsonschema.net/Clients",
+             "type": "array",
+             "items": {
+                 "$ref": "https://raw.githubusercontent.com/ghstahl/IdentityServer4Schemas/master/Client.json"
+             }
+
+         }
+     }
+ }
